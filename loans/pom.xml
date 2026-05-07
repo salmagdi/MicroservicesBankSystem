@@ -11,6 +11,7 @@
 	<groupId>com.microservice</groupId>
 	<artifactId>loans</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name/>
 	<description/>
 	<url/>
@@ -94,6 +95,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+				<image><name>salmagd/loans:ms</name></image>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>

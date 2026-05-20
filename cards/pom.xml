@@ -30,6 +30,7 @@
 	<properties>
 		<java.version>17</java.version>
         <spring-cloud.version>2025.1.1</spring-cloud.version>
+        <start-class>com.microservice.cards.CardsApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -87,10 +88,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
-        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
@@ -124,11 +121,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-            <plugin>
-                <groupId>com.google.cloud.tools</groupId>
-                <artifactId>jib-maven-plugin</artifactId>
-                <version>3.4.3</version>
-            </plugin>
 			<plugin>
         		<groupId>com.google.cloud.tools</groupId>
         		<artifactId>jib-maven-plugin</artifactId>

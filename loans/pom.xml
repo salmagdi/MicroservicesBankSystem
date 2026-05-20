@@ -30,6 +30,7 @@
 	<properties>
 		<java.version>17</java.version>
         <spring-cloud.version>2025.1.1</spring-cloud.version>
+        <start-class>com.microservice.loans.LoansApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -128,7 +129,12 @@
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
-                <version>3.4.3</version>
+                <version>3.5.1</version>
+                <configuration>
+                    <to>
+                        <image>salmagd/loans:ms</image>
+                    </to>
+                </configuration>
             </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
